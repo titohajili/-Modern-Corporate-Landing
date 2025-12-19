@@ -4,7 +4,11 @@ import Link from 'next/link'
 import React from 'react'
 import { HiBars3BottomRight } from 'react-icons/hi2'
 
-const Nav = () => {
+type Props = {
+    openNav: () => void
+}
+
+const Nav = ({openNav}: Props) => {
   return (
     <div className='h-[12vh] relative z-10 lg:mt-8'>
       <div className='flex items-center h-full justify-between w-[90%] xl:w-[80%] mx-auto'>
@@ -26,7 +30,7 @@ const Nav = () => {
         </div>
         {/* Hamburger */}
         <div className='lg:hidden'>
-            <HiBars3BottomRight className='w-9 h-9 text-[#dfc39f] cursor-pointer'/>
+            <HiBars3BottomRight className='w-9 h-9 text-[#dfc39f] cursor-pointer' onClick={openNav}/>
         </div>
 
       </div>
