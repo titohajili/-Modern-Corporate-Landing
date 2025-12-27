@@ -22,7 +22,7 @@ const AboutProgress = () => {
   return (
     <div className='space-y-8 py-6 md:py-10'>
       {
-        data.map((item,idx)=>{
+        data.map((item)=>{
         return (
             <div key={item.id} className='flex items-center gap-6 bg-white rounded-xl shadow-md p-6'>
                 {/* icon */}
