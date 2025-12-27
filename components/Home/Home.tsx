@@ -3,6 +3,7 @@ import Hero from './Hero/Hero'
 import About from './About/About'
 import Services from './Services/Services'
 import WorkProcess from './WorkProcess/WorkProcess'
+import Project from './Project/Project'
 
 const Home = () => {
   return (
@@ -11,6 +12,7 @@ const Home = () => {
       <About/>
       <Services/>
       <WorkProcess/>
+      <Project/>
     </div>
   )
 }
