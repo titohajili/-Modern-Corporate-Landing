@@ -20,7 +20,10 @@ const Project = () => {
       </h1>
       <div className='grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 mt-20 w-[80%] mx-auto gap-6'>
         {PROJECT_IMAGES.map((src,idx)=>{
-            return <div key={idx}>
+            return <div 
+                 data-aos="zoom-in"
+                 data-aos-anchor-pacement="top-center"
+                 data-aos-delay={idx*100} key={idx}>
                 <Tilt>
                     <Image src={src} alt='project' width={550} height={550} className='rounded-lg' />
                 </Tilt>

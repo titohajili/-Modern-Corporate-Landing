@@ -20,11 +20,11 @@ const AboutProgress = () => {
     ]
 
   return (
-    <div className='space-y-8 py-6 md:py-10'>
+    <div  className='space-y-8 py-6 md:py-10'>
       {
-        data.map((item)=>{
-        return (
-            <div key={item.id} className='flex items-center gap-6 bg-white rounded-xl shadow-md p-6'>
+        data.map((item,idx)=>(
+        
+            <div data-aos="fade-up" data-aos-anchor-pacement="top-center" data-aos-delay={450 + (idx + 1) * 150} key={item.id} className='flex items-center gap-6 bg-white rounded-xl shadow-md p-6'>
                 {/* icon */}
                 <div className='bg-[#b58b58] p-5 rounded-md flex items-center justify-center'>
                     {item.icon}
@@ -43,7 +43,7 @@ const AboutProgress = () => {
                 </div>
             </div>
         )
-        })
+        )
       }
     </div>
   )

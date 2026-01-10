@@ -6,7 +6,10 @@ type Props = {
 }
 const WorkProcessCard = ({number, title, isExtraClass}: Props) => {
   return (
-    <div className={`flex items-center gap-3 ${isExtraClass ? "lg:border-r-2 lg:border-gray-300" : ""} `}>
+    <div
+           data-aos="fade-up"
+           data-aos-anchor-pacement="top-center"
+           data-aos-delay="0" className={`flex items-center gap-3 ${isExtraClass ? "lg:border-r-2 lg:border-gray-300" : ""} `}>
       <div className='text-[40px] md:text-[60px] lg:text-[80px] font-bold mr-5 leading-none text-amber-600'>
         {number}
       </div>

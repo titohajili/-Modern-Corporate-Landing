@@ -7,7 +7,7 @@ const About = () => {
     <div className='pt-16 pb-16 bg-white'>
       <div className='w-[80%] mx-auto grid grid-cols-1 lg:grid-cols-2 gap-6'>
         {/* Image Content */}
-        <div className='relative flex justify-center items-center'>
+        <div data-aos="zoom-in" data-aos-anchor-pacement="top-center" className='relative flex justify-center items-center'>
             {/* Main Image */}
             <Image  src={"/images/a3.png"} alt='img' width={500} height={500} className='animate-spin [animation-duration:20s]'/>
             {/* Center Image */}
@@ -15,11 +15,11 @@ const About = () => {
         </div>
         {/* Text Content */}
         <div>
-          <h1 className='text-blue-700 text-lg font-medium tracking-widest'>About Us</h1>
+          <h1 data-aos="fade-up" data-aos-anchor-pacement="top-center" data-aos-delay="150"  className='text-blue-700 text-lg font-medium tracking-widest'>About Us</h1>
         {/* Main Heading */}
-        <h1 className='text-3xl md:text-5xl font-bold mt-4'>Innovative solutions for digital success</h1>
+        <h1 data-aos="fade-up" data-aos-anchor-pacement="top-center" data-aos-delay="300" className='text-3xl md:text-5xl font-bold mt-4'>Innovative solutions for digital success</h1>
         {/* description */}
-        <p className='ml-0 md:ml-12 md:mt-10 mt-5 text-black text-sm md:text-base font-semibold leading-loose'>
+        <p data-aos="fade-up" data-aos-anchor-pacement="top-center" data-aos-delay="450" className='ml-0 md:ml-12 md:mt-10 mt-5 text-black text-sm md:text-base font-semibold leading-loose'>
             Payment solutions enable businesses to accept payments Paymet
             solutions enable businesses to accept payments from customers
             conveniently securely from customres convenienntly and securely.
